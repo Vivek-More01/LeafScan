@@ -1,4 +1,5 @@
 tensorflow
 streamlit
-google-generativeai
-google
+google-auth                  2.38.0
+google-genai                 1.7.0
+google-pasta                 0.2.0
