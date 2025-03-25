@@ -1,2 +1,3 @@
 tensorflow
-google
+streamlit
+google-generativeai
