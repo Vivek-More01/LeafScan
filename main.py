@@ -2,10 +2,6 @@ import streamlit as st
 import tensorflow as tf
 import numpy as np
 import json as js
-from google import genai
-from time import sleep
-
-client = genai.Client(api_key="AIzaSyB1MSHiCCh0G5Nbxk49LQJUWUcaCzVFSE8")
 
 models = {"MobileNetV2FT": "PPD_MobileNetV2_FT.keras", "MobileNetV2":"Plant_Disease_Model_MobileNetV2_Default.keras", "NPDDCustom":"NPDDCustom_model.keras","ResNet50":"PPD_ResNet50.keras","MNV_Plant_Village":"Plant_Disease_Model_PlantVillageAugmented.keras"}
 #Input for model
@@ -87,5 +83,3 @@ elif page == "Resources":
     st.title("Resources")
     st.markdown("Resources for Plant Disease Detection")
     st.markdown(f"""<h6>PlantVillage Dataset {class_names_PV}</h6>""")
-
-#list of strings representing class names
